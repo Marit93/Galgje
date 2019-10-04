@@ -17,13 +17,18 @@
 
 <div class="guessletter"> 
     <div><input type="text" name="letters" value="Guess a letter"></div>
-    <div class="buttons"><button id="guess">Guess</div>
-        <button id="restart">Restart</button>
+    <div class="buttons"><button onclick="putletter()" id="guess">Guess</div>
+        <button onclick="window.location.reload()" id="restart">Restart</button>
+
 </div>
 <h2 class="current">Current word:</h2>
-//streepjes voor het woord
+<p><span id="current-word"> </span></p>
 
-<h2 class="lives">You have x live remaining</h2>
+<p> Guessed letters: <span id="guesses-letters">""</span>
+</p>
+
+<h2 class="lives">You have <span id="lives">10 </span>live remaining</h2>
+
   <script src=""main.js"></script>
 </body>
 </html>
